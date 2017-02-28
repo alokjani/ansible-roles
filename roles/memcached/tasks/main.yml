@@ -1,0 +1,9 @@
+---
+# Install and Configure Memcached
+#
+- name: gather vars
+  include_vars: main.yml
+
+- include: install.yml
+
+- include: configure.yml

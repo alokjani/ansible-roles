@@ -1,0 +1,9 @@
+---
+# defaults file for memcached
+memcached_debug: False
+
+memcached_memory: "{{ ansible_memtotal_mb | int // 4 }}"
+memcached_port: 11211
+memcached_listen: "127.0.0.1"
+memcached_connections: 1024
+memcached_threads: 4

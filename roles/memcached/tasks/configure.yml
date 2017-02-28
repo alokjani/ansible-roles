@@ -1,0 +1,9 @@
+---
+- name: Configure Memcached
+  template:
+    src: "{{ memcached_conf_template }}"
+    dest: "{{ memcached_conf_destination }}"
+    owner: "root"
+    group: "root"
+    mode: "0644"
+  notify: Restart Memcached Service

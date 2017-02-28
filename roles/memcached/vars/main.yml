@@ -1,0 +1,7 @@
+---
+memcached_packages:
+  - memcached
+
+memcached_conf_destination: /etc/memcached.conf
+
+memcached_conf_template: memcached.conf.j2

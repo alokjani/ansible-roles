@@ -1,0 +1,7 @@
+---
+- name: Install Packages
+  apt:
+    pkg: "{{ item }}"
+    state: installed
+    update_cache: yes
+  with_items: "{{ memcached_packages }}"
