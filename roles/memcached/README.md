@@ -23,7 +23,7 @@ Example Playbook
 License
 -------
 
-Apache
+GPLv3.
 
 Author Information
 ------------------
